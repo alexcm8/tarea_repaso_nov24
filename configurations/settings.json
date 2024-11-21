@@ -1,0 +1,31 @@
+{
+    "app": {
+      "name": "MiAplicacionWeb",
+      "version": "1.0.0",
+      "description": "Una aplicación web ficticia para gestionar proyectos.",
+      "port": 3000,
+      "host": "localhost"
+    },
+    "database": {
+      "type": "mongodb",
+      "host": "localhost",
+      "port": 27017,
+      "username": "admin",
+      "password": "admin123",
+      "databaseName": "miappdb"
+    },
+    "api": {
+      "key": "abc123xyz456",
+      "baseUrl": "https://api.miaplicacion.com",
+      "endpoints": {
+        "getUser": "/users/{id}",
+        "getProjects": "/projects",
+        "createProject": "/projects/new"
+      }
+    },
+    "logging": {
+      "level": "info",
+      "logToFile": true,
+      "logFilePath": "/var/log/miapp.log"
+    }
+  }
